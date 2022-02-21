@@ -1,15 +1,36 @@
+<!--
+ * @Date: 2022-02-21 11:23:08
+ * @LastEditors: cuizhide
+ * @LastEditTime: 2022-02-21 12:51:53
+ * @description: 
+-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <el-menu
+    :default-active="activeIndex"
+    :router="true"
+    class="el-menu-demo"
+    mode="horizontal"
+  >
+    <el-menu-item index="/vue-router">vue-router</el-menu-item>
+    <el-menu-item index="/vuex-test">vuex-test</el-menu-item>
+    <!-- <el-menu-item index="3">Orders</el-menu-item> -->
+  </el-menu>
+
+  <router-view></router-view>
+  <div id="vuex-test"></div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import { ref } from "@vue/reactivity";
 export default {
   name: "App",
-  components: {
-    HelloWorld,
+  components: {},
+  setup(props) {
+    const activeIndex = ref("/vue-router");
+
+    return {
+      activeIndex,
+    };
   },
 };
 </script>
