@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2022-02-21 11:23:08
+ * @LastEditors: cuizhide
+ * @LastEditTime: 2022-02-21 15:05:15
+ * @description: 
+-->
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -61,27 +67,6 @@
       <li>
         <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
       </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
     </ul>
   </div>
 </template>
@@ -91,6 +76,9 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+  mounted() {
+    console.log(333);
   },
 };
 </script>
