@@ -1,8 +1,8 @@
 /*
  * @Date: 2022-02-21 11:23:08
  * @LastEditors: cuizhide
- * @LastEditTime: 2022-02-21 12:50:50
- * @description:
+ * @LastEditTime: 2022-02-21 14:37:22
+ * @description: qiankun
  */
 import { createApp } from "vue";
 import App from "./App.vue";
